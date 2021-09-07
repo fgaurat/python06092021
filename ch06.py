@@ -14,4 +14,3 @@ def main(value=10):
 if __name__ == '__main__':
     import sys
     value = int(sys.argv[-1])
-    main(value)

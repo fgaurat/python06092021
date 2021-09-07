@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<meta name='generator' content='getwsodott.com' />
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+<meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
+<meta http-equiv='Content-Language' content='en-US' />
+<title>Getwsodott :: Login</title>
+<link rel='alternate' type='application/rss+xml' title='Latest Torrents' href='./rss.php?passkey=' />
+<link rel='stylesheet' href='templates/2/1.css' type='text/css' />
+<link rel='shortcut icon' href='/pic/favicon.ico' type='image/x-icon' />
+<script type='text/javascript' src='scripts/jquery-1.11.1.js'></script>
+<script type='text/javascript' src='scripts/bootstrap.js'></script>
+<script type='text/javascript'>
+/*<![CDATA[*/
+function themes(){
+window.open('take_theme.php','My themes','height=150,width=200,resizable=no,scrollbars=no,toolbar=no,menubar=no');
+}
+/*]]>*/
+</script>
+
+
+</head>
+<body>
+<table align='center' width='100%' cellspacing='0' cellpadding='0' style='background: transparent'>
+ 
+<tr><td class='clear'><br />
+<div id='logostrip'><center><a href='./index.php'><img src='/templates/2/pic/Logo.png' alt='Logo' title='Logo' /></center></a></div></td></tr></table><br />
+<table align='center' class='mainouter' width='1300' cellspacing='0' cellpadding='5'><tr><td id='menu'></td></tr>
+<tr><td align='center' style='padding-top: 1px; padding-bottom: 1px; border:hidden'><h1>Not logged in!</h1>
+<p><b>Error:</b> The page you tried to view can only be used when you're logged in.</p>
+<div class='round' style='background:transparent;width:75%;border:1px solid #666666;padding:5px;'>
+<table width='100%' cellspacing='0' cellpadding='3'><tr><td align='left' class='colhead' colspan='2'><span style='font-weight:bold;font-size:9pt;color:red;'><i>Notification (Regarding the update we had last night on the password system)</i></span></td></tr>
+<tr><td align='left'>
+1. If your password doesnt work anymore(which is normal), you need to use the recover form to reset a new one! If it works dont do anything...<br />
+2. If you did use the recover form yesterday/early morning today YOU NEED to use it AGAIN to generate a new confirmation link. DO NOT use your old links from your old emails.<br />
+3. We have tested the system on own accounts, new accounts, old accounts, testing accounts and IT IS WORKING!</br />
+3.1 In case of weird behaviour clear your cookies and empty your browser cache.<br />
+4. RECOVER LINK:  At the bottom of the page OR <a href='https://getwsodott.com/recover.php'>HERE</a></td></tr></table></div><script type='text/javascript' src='scripts/jquery.simpleCaptcha-0.2.js'></script>
+<script type='text/javascript'>
+/*<![CDATA[*/
+$(document).ready(function () {
+$('#captchalogin').simpleCaptcha();
+});
+/*]]>*/
+</script>
+<br />
+<form method='post' action='takelogin.php'>
+<noscript>Javascript must be enabled to login and use this site</noscript>
+<div class='round' style='background:transparent;width:35%;border:1px solid #666666;padding:5px;'>
+<table width='100%' cellspacing='0' cellpadding='3'><tr><td align='left' class='colhead' colspan='2'><span style='font-weight:bold;font-size:8pt;color:red;'><i></i></span></td></tr>
+<tr><td align='center' colspan='2'><b>[5]</b> Failed logins in a row will ban your ip from access<br />You have<b> <font color='green' size='4'>5</font> </b>login attempt(s) remaining.<br><strong><font color='red'>IF YOUR PASSWORD DOESNT WORK USE <i><a href='http://getwsodott.com/recover.php'>MAIL RECOVER</a></i> TO RESET !</font></strong></td></tr>
+<tr><td align='right' class='heading'>Username:</td><td align='left'><input type='text' size='40' name='username' /></td></tr>
+<tr><td align='right' class='heading'>Password:</td><td align='left'><input type='password' size='40' name='password' /></td></tr>
+<!--<tr><td align='right' class='heading'>Use SSL:</td><td><label for='ssl'>Browse the site using a secure connection just this session<input type='checkbox' name='use_ssl' value='1' id='ssl'/></label><br/><label for='ssl2'>Browse the site using a secure connection permanently<input type='checkbox' name='perm_ssl' value='1' id='ssl2'/></label></td></tr>-->
+<!--<tr><td class='heading'>Duration:</td><td align='left'><input type='checkbox' name='logout' value='yes' checked='checked' />Log me out after 15 minutes inactivity</td></tr>-->
+<tr><td align='center' colspan='2' id='captchalogin'></td></tr>
+<tr><td align='center' colspan='2'>Now click the button marked <strong>X</strong></td></tr>
+<tr><td colspan='2' align='center'><input name="submitme" type="submit" value="..." class="btn" /><input name="submitme" type="submit" value="..." class="btn" /><input name="submitme" type="submit" value="..." class="btn" /><input name="submitme" type="submit" value="..." class="btn" /><input name="submitme" type="submit" value="X" class="btn" /><input name="submitme" type="submit" value="..." class="btn" /></td></tr></table></div><br /><p style='text-align: center;'><strong></strong> <a href='https://getwsodott.com/recover.php'>Recover your PASSWORD</a></p><input type='hidden' name='returnto' value='/download.php?torrent=2843&amp;ssl=1' />
+</form><br /></td></tr></table><br />
+<p align='center'><br />Getwsodott</p></body></html>
