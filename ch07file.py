@@ -29,7 +29,7 @@ def main():
         {"login":"user3","password":"123"},
     ]
     users_from_file=[]
-    with open('users.csv','a') as f:
+    with open('users.csv','w') as f:
         for u in users:
             line = f"'{u['login']}';'{u['password']}'"
             print(line,file=f)
@@ -38,10 +38,13 @@ def main():
         lines = [line.strip() for line in f.readlines()]
         for line in lines:
             user = line.split(";")
-            d = {"login":user[0],"password":user[1]}
+            # d = {"login":user[0][1:-1],"password":user[1][1:-1]}
+            d = {"login":user[0].strip("'"),"password":user[1].strip("'")}
             users_from_file.append(d)
+    
+    print(users)
     print(users_from_file)
 
-    
+
 if __name__ == '__main__':
     main()
