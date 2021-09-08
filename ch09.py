@@ -3,13 +3,13 @@ from Rectangle import Rectangle
 
 
 def main():
-    r =Rectangle()
-    print(r.longueur,r.largeur)
-    # r =Rectangle(12,2)
-    # surface = r.get_surface() # 24
-    # longueur = r.get_longueur() # 12
+    r =Rectangle(12,2)
+    print(r._longueur,r._largeur)
+    surface = r.get_surface() # 24
+    print(surface)
+    longueur = r.get_longueur() # 12
+    print(longueur)
     # largeur = r.get_largeur() # 2
-    # print(surface)
     # print(longueur)
     # print(largeur)
 
