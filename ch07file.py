@@ -28,6 +28,8 @@ def main():
         {"login":"user2","password":"345"},
         {"login":"user3","password":"123"},
     ]
+    for u in users:
+        print(f"'{u['login']}';'{u['password']}'")
 
 if __name__ == '__main__':
     main()
