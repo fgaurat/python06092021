@@ -27,6 +27,13 @@ def main():
     # print(f"-{h:>10}-")
     print(f"-{h:10}-")
     print("-{0:10}-".format(h))
+    print("-{value_h:10}-".format(value_h=h))
+
+    dict_info = {'name':"GAURAT",'first_name':"Fred"}
+    print("Hello {name} {first_name}".format(name=dict_info['name'],first_name=dict_info['first_name']))
+    print("Hello {name} {first_name}".format(**dict_info))
+
+
 
 
 if __name__ == '__main__':
