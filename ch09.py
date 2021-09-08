@@ -12,6 +12,7 @@ def main():
     largeur = r.get_largeur() # 2
     print(largeur)
     print(r)
+    print("Rectangle.cpt",Rectangle.cpt)
 
 
 if __name__ == '__main__':

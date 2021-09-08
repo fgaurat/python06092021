@@ -3,11 +3,12 @@
 
 class Rectangle:
     """Rectangle class"""
-
+    cpt = 0
     def __init__(self,*,longueur=0,largeur=0) -> None: # double under init , dunder init
         print("def __init__(self)")
         self._longueur=longueur # définition de la propriété longueur
         self._largeur=largeur # définition de la propriété largeur
+        Rectangle.cpt+=1
 
     def get_surface(self):
         return self._longueur*self._largeur
