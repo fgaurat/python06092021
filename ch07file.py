@@ -47,6 +47,10 @@ def main():
     # print(users)
     # print(users_from_file)
 
+    json_string = json.dumps(users)
+    print(json_string)
+    users_data = json.loads(json_string)
+    print(users_data[0]["login"])
 
 if __name__ == '__main__':
     main()
