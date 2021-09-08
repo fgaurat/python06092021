@@ -28,8 +28,10 @@ def main():
         {"login":"user2","password":"345"},
         {"login":"user3","password":"123"},
     ]
-    for u in users:
-        print(f"'{u['login']}';'{u['password']}'")
+    with open('users.csv','a') as f:
+        for u in users:
+            line = f"'{u['login']}';'{u['password']}'"
+            print(line,file=f)
 
 if __name__ == '__main__':
     main()
