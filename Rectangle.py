@@ -18,3 +18,11 @@ class Rectangle:
     def set_longueur(self,longueur):
         self._longueur = longueur
 
+    def get_largeur(self):
+        return self._largeur
+    
+    def set_largeur(self,largeur):
+        self._largeur = largeur
+
+    def __str__(self) -> str:
+        return f"{__class__} longueur : {self._longueur} largeur : {self._largeur}"

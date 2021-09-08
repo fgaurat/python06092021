@@ -9,9 +9,10 @@ def main():
     print(surface)
     longueur = r.get_longueur() # 12
     print(longueur)
-    # largeur = r.get_largeur() # 2
-    # print(longueur)
-    # print(largeur)
+    largeur = r.get_largeur() # 2
+    print(largeur)
+    sr = str(r)
+    print(r)
 
 
 if __name__ == '__main__':
