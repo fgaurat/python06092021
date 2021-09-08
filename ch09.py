@@ -3,8 +3,18 @@ from typing import SupportsFloat
 from Rectangle import Rectangle
 
 
+def show_surface(o):
+    print(o)
+    print(o.surface)
+
 def main():
-    # r = Rectangle(longueur = 2,largeur = 3)
+    c = Carre(cote=3)
+    r = Rectangle(longueur = 2,largeur = 3)
+    show_surface(c)
+    show_surface(r)
+
+    print(f"{c.surface=} {c.cote=}")
+  # r = Rectangle(longueur = 2,largeur = 3)
     # r2 = Rectangle(longueur = 2,largeur = 3)
     # print(r._longueur,r._largeur)
     # surface = r.surface # 24
@@ -19,10 +29,6 @@ def main():
     # # print(largeur)
     # print(r)
     # print("Rectangle.cpt",Rectangle.get_cpt())
-
-    c = Carre(cote=3)
-    print
-
 
 
 if __name__ == '__main__':
