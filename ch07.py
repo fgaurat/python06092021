@@ -10,10 +10,22 @@ def main():
     print(say_hello_2)
     print(say_hello_3)
 
+
     a= 1
     b= 3
     c = 0.339
     print(f"Valeur de c : {c:.2%}")
+
+
+    h = "toto"
+    # print(f"-{h:<10}-")
+    # print(f"-{h:>10}-")
+    print(f"-{h:10}-")
+
+    h = 123
+    # print(f"-{h:<10}-")
+    # print(f"-{h:>10}-")
+    print(f"-{h:10}-")
 
 if __name__ == '__main__':
     main()
