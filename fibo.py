@@ -10,7 +10,8 @@ def fib(n):    # write Fibonacci series up to n
 
 def fib2(n):   # return Fibonacci series up to n
     """
-    return Fibonacci series up to n"""
+    return Fibonacci series up to n
+    """
     result = []
     a, b = 0, 1
     while a < n:
@@ -19,4 +20,5 @@ def fib2(n):   # return Fibonacci series up to n
     return result
 
 if __name__ == '__main__':
+    fib(1000)
     print('fibo',__name__)

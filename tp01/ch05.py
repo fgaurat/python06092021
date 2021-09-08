@@ -18,7 +18,13 @@ print(q)
 #     res.append(i*2)
 # print(res)
 
-# res = list(map(lambda d:d*2,l))
+
+# def mult2(a):
+#     return a*2
+
+
+# res = list(map(mult2,l))
+res = list(map(lambda d:d*2,l))
 # print(res)
 
 # print(hello_pos.__doc__)

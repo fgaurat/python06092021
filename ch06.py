@@ -1,5 +1,5 @@
-# import pckfib.fibo
-
+# import pckfib.fibo 
+# import fibo
 from pckfib import fibo
 from pckfib.fibo import fib,fib2
 # from fibo import *
@@ -14,3 +14,5 @@ def main(value=10):
 if __name__ == '__main__':
     import sys
     value = int(sys.argv[-1])
+    main(value)
+
