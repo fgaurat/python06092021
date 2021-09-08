@@ -5,7 +5,7 @@ from Rectangle import Rectangle
 
 def show_surface(o):
     print(o)
-    print(o.surface)
+    # print(o.surface)
 
 def main():
     c = Carre(cote=3)
