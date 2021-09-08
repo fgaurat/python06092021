@@ -22,10 +22,12 @@ def main():
     # print(f"-{h:>10}-")
     print(f"-{h:10}-")
 
-    h = 123
+    h = "123"
     # print(f"-{h:<10}-")
     # print(f"-{h:>10}-")
     print(f"-{h:10}-")
+    print("-{0:10}-".format(h))
+
 
 if __name__ == '__main__':
     main()
