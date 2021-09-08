@@ -3,7 +3,7 @@ from Rectangle import Rectangle
 
 
 def main():
-    r =Rectangle(12,2)
+    r =Rectangle(longueur = 2,largeur = 3)
     print(r._longueur,r._largeur)
     surface = r.get_surface() # 24
     print(surface)
@@ -11,7 +11,6 @@ def main():
     print(longueur)
     largeur = r.get_largeur() # 2
     print(largeur)
-    sr = str(r)
     print(r)
 
 
