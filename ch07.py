@@ -33,7 +33,8 @@ def main():
     print("Hello {name} {first_name}".format(name=dict_info['name'],first_name=dict_info['first_name']))
     print("Hello {name} {first_name}".format(**dict_info))
 
-
+    i = 12
+    print(f"{i:03}")
 
 
 if __name__ == '__main__':
