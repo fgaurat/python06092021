@@ -36,7 +36,10 @@ def main():
 
     with open('users.csv','r') as f:
         lines = [line.strip() for line in f.readlines()]
-        print(lines)
-
+        for line in lines:
+            user = line.split(";")
+            d = {"login":user[0],"password":user[1]}
+            users_from_file.append(d)
+    print(users_from_file)
 if __name__ == '__main__':
     main()
