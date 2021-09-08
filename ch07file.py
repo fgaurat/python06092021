@@ -41,5 +41,7 @@ def main():
             d = {"login":user[0],"password":user[1]}
             users_from_file.append(d)
     print(users_from_file)
+
+    
 if __name__ == '__main__':
     main()
