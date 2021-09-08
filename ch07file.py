@@ -52,6 +52,8 @@ def main():
     users_data = json.loads(json_string)
     print(users_data[0]["login"])
 
+    
+
 if __name__ == '__main__':
     main()
 
