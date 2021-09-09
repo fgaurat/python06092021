@@ -13,14 +13,14 @@ def main():
     r = Rectangle(longueur = 2,largeur = 3)
 
     ce = Cercle(rayon = 2)
-    print(ce.rayon)
-    s_round = round(ce.surface,2)
-    print(ce.surface,s_round,f"{ce.surface:.3f}")
+    print(ce.surface)
+    # s_round = round(ce.surface,2)
+    # print(ce.surface,s_round,f"{ce.surface:.3f}")
 
-    show_surface(c)
-    show_surface(r)
-    r.longueur = 21
-    print(f"{c.surface=} {c.cote=}")
+    # show_surface(c)
+    # show_surface(r)
+    # r.longueur = 21
+    # print(f"{c.surface=} {c.cote=}")
     # r = Rectangle(longueur = 2,largeur = 3)
     # r2 = Rectangle(longueur = 2,largeur = 3)
     # print(r._longueur,r._largeur)

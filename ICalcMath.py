@@ -3,6 +3,7 @@
 
 
 class ICalcMath:
-
+    
+    @property
     def surface(self):
-        pass
+        raise NotImplementedError('surface not implemented')
