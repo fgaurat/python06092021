@@ -6,10 +6,8 @@ def main():
         c= b/a # < ici !
         print(c)
     except ZeroDivisionError as e:
-        # print("Erreur !ZeroDivisionError",file=sys.stderr)
         print("ZeroDivisionError",e)
     except Exception as e:
-        # print("Erreur !ZeroDivisionError",file=sys.stderr)
         print("Exception",e)
 
 
