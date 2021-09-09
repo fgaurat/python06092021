@@ -13,7 +13,8 @@ def main():
     r = Rectangle(longueur = 2,largeur = 3)
     ce = Cercle(rayon = 2)
     print(ce.rayon)
-    print(ce.surface)
+    s_round = round(ce.surface)
+    print(s_round)
     show_surface(c)
     show_surface(r)
     r.longueur = 21
