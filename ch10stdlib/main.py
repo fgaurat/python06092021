@@ -1,5 +1,6 @@
 import requests
 import glob
+import re
 
 def main_requests():
 
@@ -11,6 +12,16 @@ def main_requests():
         with open(file_name,"w") as f:
             print(r.text,file=f)
 
+
+# * => 0 ou n
+# + => 1 ou n
+# ? => 0 ou 1
+# {3} => 3
+# {3,5} => 3 min -> 5 max
+# {3,} => 3 min -> n max
+
+
+
 def main():
     log_files = glob.glob('*.log')
     print(log_files)
@@ -18,7 +29,11 @@ def main():
         with open(log_file) as f:
             lines = tuple(f.readlines())
             for line in lines:
-                print(line.strip())
+                # r = "^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}"
+                r = "^(.+?)\s"
+                result = re.search(r, line.strip())
+                print(result.group(0))
+
 
 
 
