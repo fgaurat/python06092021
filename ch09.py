@@ -1,24 +1,25 @@
+from ICalcMath import ICalcMath
 from Cercle import Cercle
 from Carre import Carre
 from typing import SupportsFloat
 from Rectangle import Rectangle
 
 
-def show_surface(o):
-    print(o)
+def show_surface(o:ICalcMath):
     print(o.surface)
 
 def main():
     c = Carre(cote=3)
     r = Rectangle(longueur = 2,largeur = 3)
-
     ce = Cercle(rayon = 2)
+
     print(ce.surface)
     # s_round = round(ce.surface,2)
     # print(ce.surface,s_round,f"{ce.surface:.3f}")
 
-    # show_surface(c)
-    # show_surface(r)
+    show_surface(c)
+    show_surface(r)
+    show_surface(ce)
     # r.longueur = 21
     # print(f"{c.surface=} {c.cote=}")
     # r = Rectangle(longueur = 2,largeur = 3)
