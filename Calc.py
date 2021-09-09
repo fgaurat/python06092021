@@ -3,6 +3,5 @@
 
 class Calc:
 
-    def division(a,b):
+    def division(self,a,b):
         return a/b
-        

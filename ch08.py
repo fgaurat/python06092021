@@ -36,9 +36,18 @@ def main_1():
         print("finally : après... erreurs ou pas d'erreurs")
     # print("pas finally : après... erreurs ou pas d'erreurs")
 
+
+
 def main():
-    c = Calc()
-    r = c.division(12,0)
+    try:
+
+        c = Calc()
+        r = c.division(12,0)
+    except ZeroDivisionError as e:
+        print("ZeroDivisionError !")
+    except Exception as e:
+        print("Exception")
+
 
 if __name__ == '__main__':
     main()
