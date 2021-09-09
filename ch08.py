@@ -1,3 +1,4 @@
+from Calc import Calc
 import sys
 
 def division(a,b):
@@ -17,7 +18,7 @@ def call_division(a,b):
     
     return resultat
 
-def main():
+def main_1():
     try:
         b=0
         a = int(input("Please enter a number: "))
@@ -33,9 +34,11 @@ def main():
         print("après... si pas d'erreurs")
     finally:
         print("finally : après... erreurs ou pas d'erreurs")
-    
-    
     # print("pas finally : après... erreurs ou pas d'erreurs")
+
+def main():
+    c = Calc()
+    r = c.division(12,0)
 
 if __name__ == '__main__':
     main()
