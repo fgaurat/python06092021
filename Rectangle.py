@@ -35,5 +35,7 @@ class Rectangle:
     def __str__(self) -> str:
         return f"{__class__.__name__} longueur : {self._longueur} largeur : {self._largeur}"
     
+    
     def get_cpt():
         return Rectangle._cpt
+

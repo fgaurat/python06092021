@@ -11,7 +11,7 @@ def main():
     # mode r : read (default)
     # with open("lefichier.txt","a") as f:
     #     f.write("Bonjour\n")
-    #     print("Bonjour",file=f)
+    #     print("Bonjour",file=f,end="\n")
     #     print(f.closed)
     # print(f.closed)
 
