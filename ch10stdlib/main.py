@@ -17,8 +17,8 @@ def main():
     for log_file in log_files:
         with open(log_file) as f:
             lines = tuple(f.readlines())
-            for line in lines:
-                print(line)
+            for line in lines[:1]: # limite au premier fichier
+                print(line.strip())
 
 
 
