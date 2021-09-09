@@ -45,9 +45,9 @@ def main():
         r = c.division(12,12)
         print("resultat",r)
     except ZeroDivisionError as e:
-        print("ZeroDivisionError !")
+        print("ZeroDivisionError !",e)
     except Exception as e:
-        print("Exception")
+        print("Exception",e)
 
 
 if __name__ == '__main__':
