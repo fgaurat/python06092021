@@ -42,7 +42,8 @@ def main():
     try:
 
         c = Calc()
-        r = c.division(12,0)
+        r = c.division(12,12)
+        print("resultat",r)
     except ZeroDivisionError as e:
         print("ZeroDivisionError !")
     except Exception as e:
