@@ -1,7 +1,10 @@
 
 
 
-class Rectangle:
+from ICalcMath import ICalcMath
+
+
+class Rectangle(ICalcMath):
     """Rectangle class"""
     
     _cpt = 0

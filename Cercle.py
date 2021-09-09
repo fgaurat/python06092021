@@ -1,7 +1,8 @@
+from ICalcMath import ICalcMath
 import math
 
 
-class Cercle:
+class Cercle(ICalcMath):
 
     def __init__(self,*,rayon=0) -> None:
         self._rayon = rayon
