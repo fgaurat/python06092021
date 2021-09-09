@@ -1,3 +1,4 @@
+from DivBy12Exception import DivBy12Exception
 from Calc import Calc
 import sys
 
@@ -46,6 +47,8 @@ def main():
         print("resultat",r)
     except ZeroDivisionError as e:
         print("ZeroDivisionError !",e)
+    except DivBy12Exception as e:
+        print("DivBy12Exception !",e)
     except Exception as e:
         print("Exception",e)
 
