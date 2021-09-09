@@ -5,7 +5,17 @@ def division(a,b):
 
 
 def call_division(a,b):
-    return division(a,b)
+    resultat=0
+    try:
+        resultat = division(a,b)
+    except ZeroDivisionError as e:
+        print("ZeroDivisionError dans call_division")# 1
+        print("après ZeroDivisionError dans call_division")
+        raise e
+    finally:
+        print("traitement intermédiaire")# 2
+    
+    return resultat
 
 def main():
     try:
@@ -25,7 +35,7 @@ def main():
         print("finally : après... erreurs ou pas d'erreurs")
     
     
-    print("pas finally : après... erreurs ou pas d'erreurs")
+    # print("pas finally : après... erreurs ou pas d'erreurs")
 
 if __name__ == '__main__':
     main()
