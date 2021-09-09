@@ -14,7 +14,7 @@ def main():
     ce = Cercle(rayon = 2)
 
     print(ce.surface)
-    # s_round = round(ce.surface,2)
+    s_round = round(ce.surface,2)
     # print(ce.surface,s_round,f"{ce.surface:.3f}")
 
     show_surface(c)
