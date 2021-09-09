@@ -11,10 +11,12 @@ def show_surface(o):
 def main():
     c = Carre(cote=3)
     r = Rectangle(longueur = 2,largeur = 3)
+
     ce = Cercle(rayon = 2)
     print(ce.rayon)
     s_round = round(ce.surface,2)
     print(ce.surface,s_round,f"{ce.surface:.3f}")
+
     show_surface(c)
     show_surface(r)
     r.longueur = 21
