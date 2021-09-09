@@ -14,6 +14,13 @@ def main_requests():
 def main():
     log_files = glob.glob('*.log')
     print(log_files)
+    for log_file in log_files:
+        with open(log_file) as f:
+            lines = tuple(f.readlines())
+            for line in lines:
+                print(line)
+
+
 
 if __name__ == '__main__':
     main()
