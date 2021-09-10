@@ -2,6 +2,7 @@ import requests
 from pprint import pprint
 import sqlite3
 import configparser
+import argparse
 
 def insert_todo(todo,con):
 
@@ -44,8 +45,11 @@ def main_requests_json():
 # Delete => DELETE
 
 def main():
+    parser = argparse.ArgumentParser(description='Insert todos from web in sqlite')
+    parser.add_argument('config',help='configuration file',type=str,default='config.ini')
+    args = parser.parse_args()
     config = configparser.ConfigParser()
-    config.read('config.ini')
+    config.read(args.config)
     con = sqlite3.connect(config['BDD']['name'])
     cur = con.cursor()
     sql = r"SELECT id,title,completed FROM todos"
