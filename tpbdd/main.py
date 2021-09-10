@@ -53,7 +53,7 @@ def main_requests_json():
 # props => colonnes
 # 1 objet => 1 ligne
 
-def main():
+def main_select():
     parser = argparse.ArgumentParser(description='Insert todos from web in sqlite')
     parser.add_argument('config',help='configuration file',type=str,default='config.ini')
     args = parser.parse_args()
@@ -68,9 +68,10 @@ def main():
         t = Todo(id=row[0],title=row[1],completed=row[2])
         print(t)
 
-
-
     con.close()
+
+def main():
+    
 
 
 
