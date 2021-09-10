@@ -1,3 +1,4 @@
+from Todo import Todo
 import requests
 from pprint import pprint
 import sqlite3
@@ -64,7 +65,9 @@ def main():
     result_set = cur.execute(sql)
     
     for row in result_set:
-        print(row)
+        t = Todo(id=row[0],title=row[1],completed=row[2])
+        print(t)
+
 
 
     con.close()

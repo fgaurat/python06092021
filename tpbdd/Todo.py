@@ -30,3 +30,6 @@ class Todo:
     @completed.setter
     def completed(self,completed):
         self._completed = completed
+
+    def __str__(self) -> str:
+        return f"{__class__.__name__} {self._id=} {self._title=} {self._completed=}"
