@@ -21,7 +21,6 @@ def main_requests():
 # {3,} => 3 min -> n max
 
 
-
 def main():
     log_files = glob.glob('*.log')
     print(log_files)
@@ -33,8 +32,6 @@ def main():
                 r = "^(.+?)\s"
                 result = re.search(r, line.strip())
                 print(result.group(0))
-
-
 
 
 if __name__ == '__main__':
