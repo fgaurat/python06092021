@@ -1,3 +1,4 @@
+from TodoDAO import TodoDAO
 from Todo import Todo
 import requests
 from pprint import pprint
@@ -71,7 +72,22 @@ def main_select():
     con.close()
 
 def main():
-    
+    parser = argparse.ArgumentParser(description='Insert todos from web in sqlite')
+    parser.add_argument('config',help='configuration file',type=str,default='config.ini')
+    args = parser.parse_args()
+    config = configparser.ConfigParser()
+    config.read(args.config)
+
+    db_file = config['BDD']['name']
+    dao = TodoDAO(db_file=db_file)
+
+    mes_todos = dao.find_all()
+
+    for todo in mes_todos:
+        print(todo)
+
+
+
 
 
 
