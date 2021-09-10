@@ -39,7 +39,7 @@ class Application(tk.Frame):
         mes_todos = self._dao.find_all()
 
         for todo in mes_todos:
-            self.todo_table.insert(parent='', index=i, iid=i, text='', values=(todo.id,todo.title,todo.competed))
+            self.todo_table.insert(parent='', index=todo.id, iid=todo.id, text='', values=(todo.id,todo.title,todo.completed))
 
 
         self.todo_table.pack(fill="both")
