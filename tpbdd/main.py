@@ -1,6 +1,7 @@
 import requests
 from pprint import pprint
 import sqlite3
+import configparser
 
 def insert_todo(todo,con):
 
@@ -16,9 +17,13 @@ def insert_todo(todo,con):
 
 
 def main_requests_json():
-    con = sqlite3.connect('bdd_todos.db')
+    config = configparser.ConfigParser()
+    config.read('config.ini')
+    print()
 
-    url = "https://jsonplaceholder.typicode.com/todos"
+    con = sqlite3.connect(config['BDD']['name'])
+
+    url = config['DATA']['url']
     resp = requests.get(url)
     todos = resp.json() 
     # print(todos)
@@ -39,7 +44,9 @@ def main_requests_json():
 # Delete => DELETE
 
 def main():
-    con = sqlite3.connect('bdd_todos.db')
+    config = configparser.ConfigParser()
+    config.read('config.ini')
+    con = sqlite3.connect(config['BDD']['name'])
     cur = con.cursor()
     sql = r"SELECT id,title,completed FROM todos"
     result_set = cur.execute(sql)
