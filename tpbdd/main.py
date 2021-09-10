@@ -44,6 +44,14 @@ def main_requests_json():
 # Update => UPDATE
 # Delete => DELETE
 
+# Data Access Object => DAO
+# Repository
+# 
+# ORM : Object Relation Mapping
+# Class => table
+# props => colonnes
+# 1 objet => 1 ligne
+
 def main():
     parser = argparse.ArgumentParser(description='Insert todos from web in sqlite')
     parser.add_argument('config',help='configuration file',type=str,default='config.ini')
