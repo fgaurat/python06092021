@@ -23,6 +23,7 @@ class Application(tk.Frame):
 def main():
     root = tk.Tk()
     app = Application(master=root)
+    root.geometry('400x300')
     app.mainloop()
 
 
