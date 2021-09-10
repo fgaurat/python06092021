@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import ttk
 
 class Application(tk.Frame):
 
@@ -9,13 +10,15 @@ class Application(tk.Frame):
         self.create_widgets()
 
     def create_widgets(self):
-        self.hi_there = tk.Button(self)
-        self.hi_there["text"] = "Hello World\n(click me)"
-        self.hi_there["command"] = self.say_hi
-        self.hi_there.pack(side="top")
+        # self.hi_there = tk.Button(self)
+        # self.hi_there["text"] = "Hello World\n(click me)"
+        # self.hi_there["command"] = self.say_hi
+        # self.hi_there.pack(side="top")
 
-        self.quit = tk.Button(self, text="QUIT", fg="red",command=self.master.destroy)
-        self.quit.pack(side="bottom")
+        # self.quit = tk.Button(self, text="QUIT", fg="red",command=self.master.destroy)
+        # self.quit.pack(side="bottom")
+        self.todo_table = ttk.Treeview(self)
+        self.todo_table.pack(fill="both")
 
     def say_hi(self):
         print("hi there, everyone!")
@@ -23,7 +26,7 @@ class Application(tk.Frame):
 def main():
     root = tk.Tk()
     app = Application(master=root)
-    root.geometry('400x300')
+    root.geometry('800x600+500+200')
     app.mainloop()
 
 
